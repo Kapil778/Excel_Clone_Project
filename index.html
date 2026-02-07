@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Clone</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-bar">Excel Clone 1</div>
+        <div class="menu">
+            <div class="file menu-item">FILE</div>
+            <div class="home menu-item menu-item-selected">HOME</div>
+            <div class="insert menu-item">INSERT</div>
+            <div class="layout menu-item">LAYOUT</div>
+            <div class="help menu-item">HELP</div>
+        </div>
+        <div class="menu-icon-bar">
+            <div class="material-icons icon-cut menu-icon-item">content_cut</div>
+            <div class="material-icons icon-copy menu-icon-item">content_copy</div>
+            <div class="material-icons icon-paste menu-icon-item">content_paste</div>
+            <select class="selector font-family-selector">
+                <option style="font-family: Noto Sans;" value="Noto Sans">Noto Sans</option>
+                <option style="font-family: Arial;" value="Arial">Arial</option>
+                <option style="font-family: Calibri;" value="Calibri">Calibri</option>
+                <option style="font-family: Courier New;" value="Courier New">Courier New</option>
+                <option style="font-family: Lato;" value="Lato">Lato</option>
+                <option style="font-family: Palatino;" value="Palatino">Palatino</option>
+            </select>
+            <select class="selector font-size-selector">
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+            </select>
+            <div class="material-icons icon-bold menu-icon-item style-icon ">format_bold</div>
+            <div class="material-icons icon-italic menu-icon-item style-icon">format_italic</div>
+            <div class="material-icons icon-underline menu-icon-item style-icon">format_underline</div>
+            <div class="material-icons icon-align-left menu-icon-item selected align-icon">format_align_left</div>
+            <div class="material-icons icon-align-center menu-icon-item align-icon">format_align_center</div>
+            <div class="material-icons icon-align-right menu-icon-item align-icon">format_align_right</div>
+            <div class="material-icons icon-color_fill menu-icon-item align-icon">format_color_fill</div>
+            <div class="material-icons icon-color_text menu-icon-item align-icon">format_color_text</div>
+
+        </div>
+        <div class="formula-bar">
+            <div class="formula-editor selected-cell"contenteditable="true"></div>
+            <div class="function-sign">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <text x="2" y="18" font-size="16" font-weight="bold" fill="#2c3e50">
+                        fx
+                    </text>
+                </svg>
+            </div>
+            <div class="formula-editor formula-input"contenteditable="true"></div>
+        </div>
+        <div class="data-container">
+            <div class="select-all"></div>
+            <div class="col-name-container">
+                <!--
+                    <div class="column-name" id="colCod-A colId-1">A</div>
+                <div class="column-name" id="colCod-B colId-2">B</div>-->
+            </div>
+            <div class="row-name-container">
+                <!--<div class="row-name">1</div>
+                <div class="row-name">2</div>-->
+            </div>
+            <div class="input-cell-container">
+                <!--<div class="row-cell">
+                    <div class="input-cell"contenteditable="true"id="row-col-1"data="Code-A"></div>
+                    <div class="input-cell"contenteditable="true"></div>
+                </div>
+                <div class="row-cell">
+                    <div class="input-cell"contenteditable="true"></div>
+                    <div class="input-cell"contenteditable="true"></div>
+                </div>-->
+
+            </div>
+        </div>
+        <div class="sheet-bar">
+            <div class="scroller">
+                <div class="material-icons icon-left-scroll">arrow_left</div>
+                <div class="material-icons icon-right-scroll">arrow_right</div>
+            </div>
+            <div class="material-icons icon-add">add_circle</div>
+            <div class="sheet-tab-container">
+                <div class="sheet-tab">Sheet1</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
