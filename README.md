@@ -49,6 +49,3 @@ Excel-Clone/
 *  Advanced formulas and functions
 *  Dark Mode support
 *  Cloud synchronization
-
-
-This project is licensed under the MIT License.
